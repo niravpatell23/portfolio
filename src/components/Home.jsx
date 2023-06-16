@@ -3,10 +3,55 @@ import image from "../assets/heroImage.jpg";
 // import { HiArrowRight } from "react-icons/hi";
 
 import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/nniravpatel/",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/niravpatell23",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:nnirav.patel7@gmail.com",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <BsFillPersonLinesFill size={30} />
+        </>
+      ),
+      href: "/Nirav_resume.pdf",
+      style: "rounded-br-md",
+      download: true,
+    },
+  ];
+
   return (
     <div
       name="home"
@@ -22,6 +67,20 @@ const Home = () => {
             {" "}
             I am a frontend developer
           </h2>
+          <div className="flex justify-evenly py-8 lg:py-10 lg:ml-[-100px]">
+            {links.map(({ id, child, href, style, download }) => (
+              <a
+                key={id}
+                href={href}
+                className=" cursor-pointer duration-300 hover:text-blue-600"
+                download={download}
+                target="_blank"
+                rel=" noopener noreferrer"
+              >
+                {child}
+              </a>
+            ))}
+          </div>
           <p className="text-gray-500 py-4 max-w-md">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus praesentium expedita recusandae. Deleniti in dolorum
