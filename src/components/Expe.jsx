@@ -81,12 +81,7 @@ const Expe = () => {
                   <strong>Stevens Institute of Technology</strong> |{" "}
                   <small>2021 - 2023</small>
                 </p>
-                <p>
-                  Tempor eos dolore amet tempor dolor tempor. Dolore ea magna
-                  sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem
-                  kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
-                  lorem diam
-                </p>
+                <p></p>
               </div>
               <div className="relative mt-9 mb-4">
                 <div className="  absolute -left-11 z-2 bg-black rounded-2xl">
@@ -98,12 +93,7 @@ const Expe = () => {
                 <p className="mb-2">
                   <strong>Nirma University</strong> | <small>2018 - 2021</small>
                 </p>
-                <p>
-                  Tempor eos dolore amet tempor dolor tempor. Dolore ea magna
-                  sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem
-                  kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet
-                  lorem diam
-                </p>
+                <p></p>
               </div>
             </div>
           </div>
