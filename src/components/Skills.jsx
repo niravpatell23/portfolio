@@ -63,7 +63,7 @@ const Exp = () => {
 
   return (
     <div
-      name="experience"
+      name="skills"
       className=" bg-gradient-to-b
      from-gray-800 to-black w-full h-screen"
     >
@@ -82,7 +82,7 @@ const Exp = () => {
         </div>
 
         <div
-          className=" w-full grid grid-cols-2 sm:grid-cols-3 
+          className=" w-full grid grid-cols-2 sm:grid-cols-5 
         gap-8 text-center py-8 px-12 sm:px-0"
         >
           {techs.map(({ id, src, title, style }) => (
