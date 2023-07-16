@@ -1,36 +1,17 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import intouch from "../assets/portfolio/intouch.gif";
 
 const PortFolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-    },
-    {
-      id: 2,
-      src: reactParallax,
-    },
-    {
-      id: 3,
-      src: navbar,
+      src: intouch,
+      demo: "https://in-touch-client.vercel.app",
+      code: "https://github.com/niravpatell23/InTouch/tree/main",
     },
     // {
-    //   id: 4,
-    //   src: reactSmooth,
-    // },
-    // {
-    //   id: 5,
-    //   src: installNode,
-    // },
-    // {
-    //   id: 6,
-    //   src: reactWeather,
+    //   id: 2,
+    //   src: reactParallax,
     // },
   ];
 
@@ -48,10 +29,10 @@ const PortFolio = () => {
         </div>
 
         <div
-          className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 
+          className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 
                         px-12 sm:px-0 md:mt-14"
         >
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -59,10 +40,16 @@ const PortFolio = () => {
                 className=" rounded-md hover:scale-105 duration-200"
               />
               <div className="flex items-center justify-center">
-                <button className=" w-1/2 px-6 m-4 hover:scale-105 duration-200">
+                <button
+                  onClick={() => window.open(demo, "_blank")}
+                  className=" w-1/2 px-6 m-4 hover:scale-105 duration-200 cursor-pointer"
+                >
                   Demo
                 </button>
-                <button className=" w-1/2 px-6 m-4 hover:scale-105 duration-200">
+                <button
+                  onClick={() => window.open(code, "_blank")}
+                  className=" w-1/2 px-6 m-4 hover:scale-105 duration-200"
+                >
                   Code
                 </button>
               </div>

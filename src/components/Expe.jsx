@@ -69,7 +69,7 @@ const Expe = () => {
           </div>
 
           {/*  */}
-          <div className=" mt-14">
+          <div className=" mt-14 ml-8">
             <h3 class=" ml-2 text-3xl font-bold inline ">Education</h3>
             <div className="border-l border-white-600  pl-8 ml-0 md:ml-2 mt-12">
               <div className="relative mt-9 mb-4">

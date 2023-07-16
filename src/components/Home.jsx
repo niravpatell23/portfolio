@@ -81,12 +81,7 @@ const Home = () => {
               </a>
             ))}
           </div>
-          <p className="text-gray-500 py-4 max-w-md">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium expedita recusandae. Deleniti in dolorum
-            quis impedit fugiat sed minus tempora natus amet eaque eius
-            asperiores voluptas, ut tempore consequuntur.
-          </p>
+          <p className="text-gray-500 py-4 max-w-md">.</p>
           <div>
             <Link
               to="portfolio"
