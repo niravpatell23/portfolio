@@ -4,7 +4,7 @@ const Edu = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800
+      className="w-full h-screen bg-gradient-to-t from-gray-800
        to-black text-white "
     >
       <div

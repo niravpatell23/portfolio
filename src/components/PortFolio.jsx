@@ -20,18 +20,18 @@ const PortFolio = () => {
       id: 3,
       src: navbar,
     },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+    // {
+    //   id: 4,
+    //   src: reactSmooth,
+    // },
+    // {
+    //   id: 5,
+    //   src: installNode,
+    // },
+    // {
+    //   id: 6,
+    //   src: reactWeather,
+    // },
   ];
 
   return (
@@ -48,8 +48,8 @@ const PortFolio = () => {
         </div>
 
         <div
-          className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 
-                        px-12 sm:px-0"
+          className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 
+                        px-12 sm:px-0 md:mt-14"
         >
           {portfolios.map(({ id, src }) => (
             <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
